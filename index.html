@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Interieur Horath</title>
+</head>
+
+<body>
+    <div class="container main">
+        <img class="logo" src="img/logo_with_claim.png" alt="Interieur Horath - Polsterei, Vorhangmontagen, Technische Vorhänge">
+
+        <img class="background" src="img/background1.jpg" alt="Einrichtung">
+
+        <div class="text">
+                <h1>Leistungen</h1>
+                
+                <p>
+                    Haben Sie ein Erbstück auf dem Dachstock oder ein über die Jahre lieb gewonnenes Polstermöbel,
+                    das wieder frischen Wind in Ihre vier Wände bringen soll? Ich beziehe und polstere Ihre Möbel neu.
+                </p>
+                
+                <h2>Dies sind meine Leistungen:</h2>
+                
+                <ul>
+                    <li>Neubezüge</li>
+                    <li>Polsterungen: Neupolsetrungen und Aufpolsterungen – traditionell und modern</li>
+                    <li>Hussen (Überzüge)</li>
+                    <li>Teilersatz</li>
+                    <li>Diverse Näharbeiten</li>
+                    <li>Liefer- und Abholservice in der ganzen Schweiz</li>
+                    <li>Technische Vorhänge inkl. Montage</li>
+                    <li>Vorhänge</li>
+                </ul>
+
+                <p>Offerten sind unverbindlich und kostenlos.</p>
+
+                <p>Alle Services werden auch für Gross- und Gastronomiekunden angeboten.</p>
+        </div>
+
+        <img class="background" src="img/background2.jpg" alt="Einrichtung">
+
+        <div class="text">
+            <h1>Über mich</h1>
+
+            <p>
+                Jedes Polstermöbel ist ein Unikat und hat seine spezifischen Bedürfnisse,
+                diesen werde ich professionell gerecht und hole aus ihnen das beste heraus.
+            </p>
+
+            <p>
+                Mit zehn Jahren Berufserfahrung in Polsterei, Innendekoration und Verkauf,
+                biete ich Ihnen eine erstklassige Beratung und Ausführung ihres Auftrages.
+                Die präzise und individuelle Arbeit des Polsterhandwerks fasziniert mich seit
+                beginn meiner Ausbildung zur Innendekorateurin Fachrichtung Polsterei.
+            </p>
+
+            <p>
+                Während dieser zehn Jahren konnte ich sehr viele Erfahrungen im Bereich der
+                Privatkundschaft sammeln. Daneben konnte ich auch für AG Möbelfabrik Horgenglarus
+                an diverse Grossaufträgen mitarbeiten.
+            </p>
+        </div>
+
+        <img class="background" src="img/background3.jpg" alt="Einrichtung">
+
+        <div class="text">
+            <h1>Kontakt</h1>
+
+            <p>
+                Interieur Horath<br>
+                Livia Horath<br>
+                Via da Manaröl 618<br>
+                7550 Scuol<br>
+            </p>
+            
+            <p>
+                079 435 56 51<br>
+                <a href="mailto:info@interieur-horath.ch">info@interieur-horath.ch</a><br>
+                <a href="http://www.interieur-horath.ch">www.interieur-horath.ch</a><br>
+            </p>
+        </div>
+
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <div style="overflow: hidden; height: 600px; width: 100%;">
+            <div id="gmap_canvas" style="height: 600px; width: 100%;"></div>
+            <style scoped>
+                #gmap_canvas img {
+                    max-width: none !important;
+                    background: none !important;
+                }
+            </style>
+        </div>
+        <script type="text/javascript">
+            function initMap() {
+                var latlng = new google.maps.LatLng(46.7955188, 10.3050494);
+    
+                map = new google.maps.Map(document.getElementById("gmap_canvas"), {
+                    zoom: 14,
+                    center: latlng,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                });
+                marker = new google.maps.Marker({
+                    map: map,
+                    position: latlng
+                });
+                infowindow = new google.maps.InfoWindow({
+                    content: "<b>Interieur Horath</b><br>Livia Horath<br>Via da Manaröl 618<br>7550 Scuol<br><a href='https://goo.gl/maps/wJWxq1LQDst' target='_blank'><strong>In Google Maps öffnen</strong></a>"
+                });
+                google.maps.event.addListener(marker, "click", function() {
+                    infowindow.open(map, marker);
+                });
+                infowindow.open(map, marker);
+            }
+    
+            google.maps.event.addDomListener(window, 'load', initMap);
+        </script>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
